@@ -1,0 +1,9 @@
+{
+	"recommendations": [
+		"bradlc.vscode-tailwindcss",
+		"bmewburn.vscode-intelephense-client",
+		"wordpresstoolbox.wordpress-toolbox",
+		"johnbillion.vscode-wordpress-hooks",
+		"yogensia.searchwpdocs"
+	]
+}

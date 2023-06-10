@@ -1,0 +1,24 @@
+{
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"[dockerfile]": {
+		"editor.defaultFormatter": "ms-azuretools.vscode-docker"
+	},
+	"[php]": {
+		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+	},
+	"search.exclude": {
+		"**/node_modules/**": true
+	},
+	"files.exclude": {
+		"**/node_modules/**": true,
+		"pnpm-lock.yaml": true,
+		"vite.config.ts.*": true,
+		"dist": true,
+		"env.php": true
+	},
+	"intelephense.format.enable": true,
+	"intelephense.stubs": ["wordpress", "Core", "dom", "superglobals"],
+	"intelephense.diagnostics.undefinedFunctions": false,
+	"intelephense.diagnostics.undefinedConstants": false,
+	"intelephense.format.braces": "k&r"
+}
