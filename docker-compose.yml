@@ -16,8 +16,11 @@ services:
       WORDPRESS_DEBUG: 1
     volumes:
       - wordpress:/var/www/html
-      - ../:/var/www/html/wp-content/themes/theme-dev
-      - ./plugins/:/var/www/html/wp-content/plugins/
+      - ./:/var/www/html/wp-content/themes/theme-dev
+      - .wordpress/plugins/:/var/www/html/wp-content/plugins/
+      - .wordpress/config/php-custom.ini:/usr/local/etc/php/conf.d/99-php-custom.ini # Personalize PHP configuration and params
+      - .wordpress/config/php-xdebug.ini:/usr/local/etc/php/conf.d/99-php-xdebug.ini # Personalize Xdebug configuration and params
+      - .wordpress/config/opcache-recommended.ini:/usr/local/etc/php/conf.d/opcache-recommended.ini # WP recommended PHP settings
 
   db:
     image: mariadb
