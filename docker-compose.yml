@@ -3,7 +3,7 @@ version: '3.9'
 services:
   wordpress:
     image: wordpress
-    restart: unless-stopped
+    user: 1000:1000
     ports:
       - 8080:80
     depends_on:
